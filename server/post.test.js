@@ -1,7 +1,7 @@
 const axios = require('axios')
 
 
-test('Should get posts', async () => {
+test('Retornando posts', async () => {
     const response = await axios({
         url: 'http://localhost:3000/blog/posts',
         method: 'get'

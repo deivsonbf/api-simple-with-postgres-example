@@ -1,3 +1,22 @@
 {
-    "openapi" : "3.0.1"
+    "openapi": "3.0.3",
+    "info": {
+        "title": "Blog Posts API",
+        "description": "Destinado a gerenciar os POSTs do Blog",
+        "termsOfService": "http://localhost:3000",
+        "version": "1.0.0",
+        "contact": {
+            "email": "deivson7@gmail.com"
+        }
+    },
+    "servers": [
+        {
+            "url": "http://localhost:3000/blog",
+            "description": "API de teste"
+        },
+        {
+            "url": "http://localhost:3000/blog",
+            "description": "API de teste"
+        }
+    ]
 }

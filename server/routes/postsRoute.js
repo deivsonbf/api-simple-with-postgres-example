@@ -6,6 +6,11 @@ const swaggerDocument = require('../swagger.json')
 
 const postsService = require('../service/postsService')
 
+router.get('/' , async (req , res) => {
+    res.send('Minha API')
+})
+
+
 router.get('/posts', async (req, res) => {
     const post = await postsService.getPosts();
     res.json(post)
@@ -13,6 +18,8 @@ router.get('/posts', async (req, res) => {
 
 router.use('/api-docs' , swaggerUi.serve)
 
+
+router.get('/')
 router.get('/posts/:id')
 router.get('/api-docs', swaggerUi.setup(swaggerDocument))
 router.post('/posts')
